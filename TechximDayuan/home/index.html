@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from lshydraulic.com/TechximDayuan/home/index by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 17 Oct 2020 01:50:19 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/favicon.html" type="image/ico" />
+    <title>大園區水利工程及災害防汛資訊系統</title>
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+
+    <!-- bootstrap-progressbar -->
+    <link href="../vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <!-- JQVMap -->
+    <link href="../vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet" />
+    <!-- bootstrap-daterangepicker -->
+    <link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <link href="../vendors/select2/dist/css/select2.min.css" rel="stylesheet">
+    <link href="../Content/jsgrid.min.css" rel="stylesheet">
+    <link href="../Content/jsgrid-theme.min.css" rel="stylesheet">
+    <!-- Custom Theme Style -->
+    <link href="../Content/custom.min.css" rel="stylesheet">
+    <link href="../Content/Customize.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../vendors/select2/dist/js/select2.min.js"></script>
+    <script src="../Scripts/jquery.blockUI.js"></script>
+    <script src="../Scripts/jsgrid.min.js"></script>
+    <script src="../Scripts/i18n/jsgrid-zh-tw.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- gauge.js -->
+    <script src="../vendors/gauge.js/dist/gauge.min.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <!-- iCheck -->
+    <script src="../vendors/iCheck/icheck.min.js"></script>
+    <!-- Skycons -->
+    <script src="../vendors/skycons/skycons.js"></script>
+    <!-- DateJS -->
+    <script src="../vendors/DateJS/build/date.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="../vendors/moment/min/moment.min.js"></script>
+    <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script src="../Scripts/Customize.js"></script>
+</head>
+<body class="nav-md">
+    <div class="container body">
+        <div class="main_container">
+            <div class="col-md-3 left_col">
+                <div class="left_col scroll-view">
+                    <div class="navbar nav_title" style="border: 0;">
+                        <a class="text-center" style="font-size: 2em;color: #ECF0F1 !important;padding-left: 1em;padding-right: 1em; padding-top:1em">
+
+                        </a>
+                    </div>
+                    <br />
+                    <div class="clearfix"></div>
+                    <br />
+                    <!-- sidebar menu -->
+                    <div id="sidebar-menu" class="main_menu_side hidden-print main_menu" style="padding-top:6em">
+                        <div class="menu_section">
+                            <ul class="nav side-menu">
+                                <li>
+                                    <a><i class="fa fa-edit"></i> 排水 <span class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav child_menu">
+                                        <li><a href="Index-2.html">排水檢視</a></li>
+                                        <li><a href="https://lshydraulic.com/TechximDayuan/FileConverter/UploadFile">排水資料上傳</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a><i class="fa fa-th-list"></i> 纜線 <span class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav child_menu">
+                                        <li><a href="https://lshydraulic.com/TechximDayuan/Cable/AttachedCable">纜線檢視</a></li>
+                                        <li><a href="https://lshydraulic.com/TechximDayuan/FileConverter/UploadCableFile">纜線資料上傳</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="https://lshydraulic.com/TechximDayuan/ConverterResult/BatchDownloadSchedule">批次下載排程檢視</a></li>
+                                <li><a href="https://lshydraulic.com/TechximDayuan/ConverterResult/ConvertFileSchedule">資料上傳轉檔排程檢視</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /sidebar menu -->
+                    <!-- /menu footer buttons -->
+                    <div class="sidebar-footer hidden-small">
+                    </div>
+                    <!-- /menu footer buttons -->
+                </div>
+            </div>
+            <!-- top navigation -->
+            <div class="top_nav">
+                <div class="nav_menu">
+                    <div class="nav toggle">
+                        <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                    </div>
+                    <nav class="nav navbar-nav">
+                        <ul class="navbar-right">
+                            <li class="nav-item">
+                                <h3>大園區水利工程及災害防汛資訊系統</h3>
+                            </li>
+                            <li class="nav-item">
+                                <img src="../Images/LOGO.png" style="width:30pt; height:30pt " />
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- /top navigation -->
+            <!-- page content -->
+            <div class="right_col" role="main">
+
+                
+
+<div class="row">
+    <div class="col-md-12 col-sm-12 ">
+        <div class="x_panel">
+            <div class="x_title">
+                <h2> 排水檢測查詢<small>展示條件選擇</small></h2>
+                <ul class="nav navbar-right panel_toolbox">
+                    <li>
+                        <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                    </li>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+            <div class="x_content">
+                <br />
+                <form id="conditionForm" class="form-horizontal form-label-left">
+                    <div class="form-group row">
+                        <label class="control-label col-md-1 col-sm-1" for="searchYears">
+                            <label for="">年度</label>
+                        </label>
+                        <div class="col-md-3 col-sm-3 ">
+                            <select id="searchYears" name="searchYears" multiple="multiple"></select>
+                        </div>                       
+                        <label for="inspectionType" class="control-label col-md-1 col-sm-1"><label for="">檢查類別</label></label>
+                        <div class="col-md-3 col-sm-3 ">
+                            <select id="inspectionType" name="inspectionType" multiple="multiple">
+                                <option value="1">定期</option>
+                                <option value="2">不定期</option>
+                            </select>
+                        </div>
+                        <label class="control-label col-md-1 col-sm-1" for="InspectionFormList">
+                            <label for="">護岸型式</label>
+                        </label>
+                        <div class="col-md-3 col-sm-3 ">
+                            <select id="InspectionFormList" multiple="multiple" name="InspectionFormList"><option value="1">土堤</option>
+<option value="2">石籠護岸</option>
+<option value="3">混合式</option>
+</select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="control-label col-md-1 col-sm-1" for="LocalDrainingSitesList">
+                            <label for="">排水名稱</label>
+                        </label>
+                        <div class="col-md-7 col-sm-7 ">
+                            <select id="LocalDrainingSitesList" multiple="multiple" name="LocalDrainingSitesList"><option value="177">177埔心街支線</option>
+<option value="178">178瓦窯溝排水分線</option>
+<option value="179">179許厝港排水</option>
+<option value="180">180塔腳支線排水</option>
+<option value="181">181崙子坪支線</option>
+<option value="182">182潮音北路支線</option>
+<option value="183">183瓦窯溝排水支線</option>
+<option value="184">184果林排水</option>
+<option value="185">185果林排水支線</option>
+<option value="186">186中華路支線</option>
+<option value="187">187機場支線</option>
+<option value="188">188軍機場支線</option>
+<option value="189">189大園海霸王支線</option>
+<option value="190">190連勝停車場支線</option>
+<option value="191">191溪海路支線</option>
+<option value="192">192和平分線支流</option>
+<option value="193">193和東路支線</option>
+<option value="194">194雙溪口溪支線</option>
+<option value="195">195洽溪支線</option>
+</select>
+                        </div>                        
+                    </div>
+                    <div class="form-group row">
+                        <label class="control-label col-md-1 col-sm-1" for="ProtectSubjectList">
+                            <label for="">保全對象</label>
+                        </label>
+                        <div class="col-md-3 col-sm-3 ">
+                            <select id="ProtectSubjectList" multiple="multiple" name="ProtectSubjectList"><option value="1">社區部落</option>
+<option value="2">工廠學校</option>
+<option value="4">農田原野</option>
+<option value="6">其他</option>
+</select>
+                        </div>
+                        <label class="control-label col-md-1 col-sm-1" for="ImprovementTypeList">
+                            <label for="">改善分類</label>
+                        </label>
+                        <div class="col-md-3 col-sm-3 ">
+                            <select id="ImprovementTypeList" multiple="multiple" name="ImprovementTypeList"><option value="1">正常</option>
+<option value="2">計畫改善</option>
+<option value="3">注意改善</option>
+<option value="4">立即改善</option>
+<option value="5">改善後正常</option>
+<option value="6">無</option>
+</select>
+                        </div>
+                        <label class="control-label col-md-1 col-sm-1 " for="inspectionSite">
+                            <label for="">左/右岸</label>
+                        </label>
+                        <div class="col-md-3 col-sm-3 ">
+                            <select id="inspectionSite" name="inspectionSite" multiple="multiple">
+                                <option value="2">左岸</option>
+                                <option value="1">右岸</option>
+                            </select>
+                        </div>
+                    </div>
+                   
+                    <div class="ln_solid"></div>
+                    <div class="item form-group">
+                        <div class="col-md-6 col-sm-6 offset-md-3">
+                            <button type="button" onclick="_search()" class="btn btn-primary">資料查詢</button>
+                            <button id="showMapBtn" type="button" style="display: none;" class="btn btn-info" onclick="_switchDisplayType()">地圖檢示</button>
+                            <button id="showDataBtn" type="button" class="btn btn-info" onclick="_switchDisplayType()">資料檢示</button>
+                            <button id="resetBtn" type="button" class="btn btn-warning" onclick="_resetCondition()">條件重設</button>
+                        </div>
+                        <div class="col-md-4 col-sm-4 ">
+                            <button type="button" class="btn btn-dark" id="pieChartBtn" onclick="_showPieChart()">圓餅圖分析</button>
+                            <input type="button" class="btn btn-success" id="wordChk" onclick="_downloadExcel()" value="Excel">
+                            <input type="button" class="btn btn-success" id="pdfChk" onclick="_downloadPDF()" value="PDF">
+                            <input type="button" class="btn btn-danger" id="deleteAllSelected" onclick="_deleteAllSelected()" value="刪除所勾選資料">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<div id="searchResults" class="x_panel" style="max-width:1650px; min-height:800px; display: none;"></div>
+<div id="resultMap" class="x_panel">
+    <div class="row">
+        <div id="mapDiv" class="col-md-9 col-sm-9">
+            <div id="map" style="min-height:800px; height:100%"></div>
+        </div>
+        <div class="col-md-3 col-sm-3" id="collapseLayers">
+            <div class="x_panel">
+                <div class="x_title">
+                    <button id="toggleBtn" type="button" class="collapseLayers btn btn-success btn-xs fa fa-chevron-right">
+                        圖資
+                    </button>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                    <div class="">
+                        <ul class="to_do">
+                            <li>
+                                <p>
+                                    <input type="checkbox" id="dayuanZoneChk" class="flat layerBtn"> <span>大園區區界</span><span style="font-size: x-large;color: #DDAE2E;">■<span></span></span>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <input type="checkbox" id="dayuanVillageZoneChk" class="flat layerBtn"> <span>大園村里界</span><span style="font-size: x-large;color: #D2B414;">■<span></span></span>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <input type="checkbox" class="flat layerBtn"> <span>其他排水圖資</span><span style="font-size: x-large;color: #369CFF;">■<span></span></span>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <input type="checkbox" class="flat layerBtn"> <span>河川圖資</span><span style="font-size: x-large;color: #F00014;">■<span></span></span>
+                                </p>
+                            </li>                            
+                            <li>
+                                <input type="checkbox" class="flat layerBtn"><span>排水</span>
+                                <ul>
+                                    <li>
+                                        <p>
+                                            <input type="checkbox" class="flat layerBtn drainLayer"> <span>公告區域排水圖資</span><span style="font-size: x-large;color: green;">■<span></span></span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <input type="checkbox" class="flat layerBtn drainLayer"> <span>非公告區域排水圖資</span><span style="font-size: x-large;color:darkgreen;">■<span></span></span>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="flat layerBtn"><span>雨水竣工人孔</span>
+                                <ul>
+                                    <li>
+                                        <p>
+                                            <input type="checkbox" class="flat layerBtn rainLayer">  <span>大園都市計畫_雨水竣工人孔</span><span style="font-size: x-large;color: #FF80C8;">■<span></span></span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <input type="checkbox" class="flat layerBtn rainLayer"> <span>大園(果林地區)都市計畫_雨水竣工人孔</span><span style="font-size: x-large;color: #bcb276;">■<span></span></span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <input type="checkbox" class="flat layerBtn rainLayer"> <span>高速鐵路桃園車站特定區計畫_雨水竣工人孔</span><span style="font-size: x-large;color: #c07a52;">■<span></span></span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <input type="checkbox" class="flat layerBtn rainLayer"><span>桃園航空城貨運園區暨客貨園區(大園南港地區)特定區計畫_雨水竣工人孔</span><span style="font-size: x-large;color: #bcdabc;">■<span></span></span>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="flat layerBtn"><span>雨水竣工管線</span>
+                                <ul>
+                                    <li>
+                                        <p>
+                                            <input type="checkbox" class="flat layerBtn pipleLayer"> <span>大園都市計畫_雨水竣工管線</span><span style="font-size: x-large;color: #FF8050;">■<span></span></span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <input type="checkbox" class="flat layerBtn pipleLayer"> <span>大園(果林地區)都市計畫_雨水竣工管線</span><span style="font-size: x-large;color: #bc6276;">■<span></span></span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <input type="checkbox" class="flat layerBtn pipleLayer"> <span>高速鐵路桃園車站特定區計畫_雨水竣工管線</span><span style="font-size: x-large;color: #80ffff;">■<span></span></span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <input type="checkbox" class="flat layerBtn pipleLayer"><span>桃園航空城貨運園區暨客貨園區(大園南港地區)特定區計畫_雨水竣工管線</span><span style="font-size: x-large;color: #bcdabc;">■<span></span></span>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="flat layerBtn"><span>其他排水清淤圖資</span>
+                                <ul>
+                                    <li>
+                                        <p>
+                                            <input type="checkbox" class="flat layerBtn otherLayer"> <span>106其他排水清淤圖資</span><span style="font-size: x-large;color: #F07814;">■<span></span></span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <input type="checkbox" class="flat layerBtn otherLayer"> <span>107其他排水清淤圖資</span><span style="font-size: x-large;color: #FF7864;">■<span></span></span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <input type="checkbox" class="flat layerBtn otherLayer"> <span>108其他排水清淤圖資</span><span style="font-size: x-large;color: #F07800;">■<span></span></span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <input type="checkbox" class="flat layerBtn otherLayer"><span>109其他排水清淤圖資</span><span style="font-size: x-large;color:#FF7878;">■<span></span></span>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="flat layerBtn"><span>都市計畫</span>
+                                <ul>
+                                    <li>
+                                        <p>
+                                            <input type="checkbox" class="flat layerBtn urbanPlanLayer"> <span>大園都市計畫</span><span style="font-size: x-large;color: #FF8000;">■<span></span></span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <input type="checkbox" class="flat layerBtn urbanPlanLayer"><span>大園(果林地區)都市計畫</span><span style="font-size: x-large;color: #c066c0;">■<span></span></span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <input type="checkbox" class="flat layerBtn urbanPlanLayer"> <span>高速鐵路桃園車站特定區計畫</span><span style="font-size: x-large;color: #989fd4;">■<span></span></span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <input type="checkbox" class="flat layerBtn urbanPlanLayer"><span>桃園航空城貨運園區暨客貨園區(大園南港地區)特定區計畫</span><span style="font-size: x-large;color: #bcda76;">■<span></span></span>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="flat statusBtn"><span>呈現檢查結果</span>
+                                <ul>
+                                    <li id="status_1">
+                                        <input type="checkbox" class="flat statusBtn"><span>正常</span><span style="font-size: x-large;color: green;">●<span></span></span>
+                                    </li>
+                                    <li id="status_2">
+                                        <input type="checkbox" class="flat statusBtn"><span>計畫改善</span><span style="font-size: x-large;color: blue;">●<span></span></span>
+                                    </li>
+                                    <li id="status_3">
+                                        <input type="checkbox" class="flat statusBtn"><span>注意改善</span><span style="font-size: x-large;color: yellow;">●<span></span></span>
+                                    </li>
+                                    <li id="status_4">
+                                        <input type="checkbox" class="flat statusBtn"><span>立即改善</span><span style="font-size: x-large;color: red;">●<span></span></span>
+                                    </li>
+                                    <li id="status_5">
+                                        <input type="checkbox" class="flat statusBtn"><span>改善後正常</span><span style="font-size: x-large;color: grey;">●<span></span></span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div id="imageModal" class="modal hide fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="modalHeader">Modal title</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div id="modalBody" class="modal-body">
+                <div id="flot-placeholder" style="width:500px;height:350px"></div>
+                <div id="imageList" />
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<link href="../Content/jsTree/style.min.css" rel="stylesheet" />
+<script type="text/javascript" src="../Scripts/jquery.blockUI.js"></script>
+<script type="text/javascript" src="../vendors/Flot/excanvas.min.js"></script>
+<script type="text/javascript" src="../vendors/Flot/jquery.flot.js"></script>
+<script type="text/javascript" src="../vendors/Flot/jquery.flot.pie.js"></script>
+<script type="text/javascript" src="../Scripts/Map/CCTS_API.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDN9bmjbWQ8eYZh9YvzBeFuEKurroVxwmw&amp;callback=_initMap"
+        async defer></script>
+<script src="../vendors/Chart.js/dist/Chart.min.js"></script>
+<script type="text/javascript" src="../Scripts/View/Index.js"></script>
+<script type="text/javascript" src="../Scripts/Map/VillageMap.js"></script>
+<script type="text/javascript" src="../Scripts/Map/inspectionMap.js"></script>
+<!-- Chart.js -->
+
+                <!-- top tiles -->
+            </div>
+            <!-- /page content -->
+            <!-- footer content -->
+            
+            <!-- /footer content -->
+        </div>
+    </div>
+    <!-- Custom Theme Scripts -->
+    <script src="../Scripts/custom.min.js"></script>
+
+</body>
+
+<!-- Mirrored from lshydraulic.com/TechximDayuan/home/index by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 17 Oct 2020 01:50:34 GMT -->
+</html>
