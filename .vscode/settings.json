@@ -1,0 +1,26 @@
+{
+    "liveSassCompile.settings.formats": [
+        {
+        	// expanded, compact, compressed or nested
+            // 壓縮
+            // "format": "compressed",
+            // 未壓縮
+            // "format": "expanded",
+            "format": "compact",
+            "extensionName": ".css",
+            // 路徑，有設定就會照設定，沒有設定就是直接依照目錄下的SCSS位置產生出CSS
+            "savePath": null,
+        }
+    ],
+    "liveSassCompile.settings.generateMap": false,
+    "liveSassCompile.settings.autoprefix": [
+        ">= 1%",
+        "last 5 versions",
+        "Firefox >= 60",
+        "Chrome >= 60",
+        "ios >= 10",
+        "Safari >= 10",
+        "ie >= 9",
+        "Android >= 6"
+    ],
+}

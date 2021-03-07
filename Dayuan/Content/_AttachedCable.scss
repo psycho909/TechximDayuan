@@ -1,0 +1,96 @@
+.fault-panel{
+    .x_title h2{
+        color:#1A3481;
+        font-weight: bold;
+    }
+}
+
+.fixed_height_320{
+    height: auto;
+}
+.FaultInformation-table{
+    height: auto !important;
+    .jsgrid-grid-body{
+        height: auto !important;
+    }
+    .jsgrid-alt-row > .jsgrid-cell{
+        background-color: #fff;
+    }
+    .jsgrid-header-row>.jsgrid-header-cell,.jsgrid-cell{
+        &:nth-of-type(1){
+            width: 30% !important;
+            position: relative;
+        }
+        &:nth-of-type(2){
+            // width: 18% !important;
+        }
+    }
+    .jsgrid-header-sort-desc:before{
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        border-color: #ffffff transparent transparent;
+    }
+    .jsgrid-header-row > .jsgrid-header-cell{
+        padding: 8px 0;
+    }
+    .jsgrid-cell{
+        padding: 8px 0;
+        border:1px solid #B6B6B6 !important;
+    }
+}
+.AttachedCable-table{
+    flex-basis: 900px;
+    flex-shrink: 0;
+    margin-right: 24px;
+    .jsgrid-header-row>.jsgrid-header-cell,.jsgrid-cell{
+        &:nth-of-type(1){
+            width: 3% !important;
+        }
+        &:nth-of-type(2){
+            // width: 18% !important;
+        }
+        &:nth-of-type(3){
+            // width: calc(55% / 3) !important;
+        }
+        &:nth-of-type(4){
+            // width: calc(55% / 3) !important;
+        }
+        &:nth-of-type(5){
+            width: 8% !important;
+        }
+        &:nth-of-type(6){
+            width: 7% !important;
+        }
+        &:nth-of-type(7){
+            width: 7% !important;
+        }
+        &:nth-of-type(8){
+            width: 3% !important;
+        }
+        &:nth-of-type(9){
+            width: 5% !important;
+        }
+        &:nth-of-type(10){
+            width: 5% !important;
+            .btn-info{
+                background-color: #338BF1;
+                padding: .375rem .75rem;
+            }
+        }
+        &:nth-of-type(11){
+            width: 7% !important;
+            .btn-default{
+                background-color: #000;
+                color:#fff;
+                padding: .375rem .75rem;
+            }
+        }
+    }
+    .jsgrid-cell{
+        &:nth-of-type(7){
+
+        }
+    }
+}
