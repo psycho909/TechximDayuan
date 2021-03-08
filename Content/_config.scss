@@ -11,6 +11,9 @@ body{
     min-height: 100vh;
     background-color: $bg;
 }
+.jsgrid-grid-header,.jsgrid-grid-body{
+    align-self: flex-start;
+}
 .jsgrid-edit-row>.jsgrid-cell, .jsgrid-filter-row>.jsgrid-cell, .jsgrid-grid-body, .jsgrid-grid-header, .jsgrid-header-row>.jsgrid-header-cell, .jsgrid-insert-row>.jsgrid-cell{
     border:none;
     overflow: hidden;
@@ -24,15 +27,19 @@ body{
 }
 .jsgrid-cell{
     border: none;
-    padding: 20px 0;
+    padding: 20px 6px;
     text-align: center;
     color:#000;
     font-size: 14px;
+    word-break: break-all;
     .btn{
         font-size: 14px;
     }
     .btn-info{
         background-color: #000000;
+    }
+    .btn-icon{
+        font-size: 0;
     }
 }
 .jsgrid-alt-row>.jsgrid-cell{
@@ -294,7 +301,7 @@ body{
     margin-bottom: 24px;
 }
 .map-panel{
-    flex-basis: 900px;
+    flex-basis: 80%;
     margin-right: 24px;
     background-color: #fff;
     padding: 18px 18px;
@@ -302,9 +309,13 @@ body{
 }
 .area-panel{
     flex: 1;
-    background-color: #fff;
-    padding: 18px 18px;
+    // background-color: #fff;
+    // padding: 18px 18px;
     border-radius: 0 15px 15px 0;
+    .x_panel{
+        background-color: #fff;
+        padding: 18px 18px;
+    }
 }
 .init-panel{
     background-color: transparent;
@@ -470,3 +481,4 @@ ul.to_do li{
         }
     }
 }
+

@@ -23,4 +23,5 @@
         "ie >= 9",
         "Android >= 6"
     ],
+    "liveServer.settings.port": 5502,
 }

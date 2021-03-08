@@ -113,7 +113,45 @@
             .menu{
                 &-wrap{
                     position: relative;
-                    flex-basis: 100px;
+                    flex-basis: 76px;
+                }
+            }
+        }
+        
+    }
+    
+    .menu__link{
+        font-size: 0 !important;
+        .icon-water,.icon-cable,.icon-downloadview,.icon-uploadview{
+            margin-right: 0;
+        }
+        .icon-slide{
+            display: none;
+        }
+    }
+    .menu__toggle{
+        justify-content: center;
+        padding-left: 0;
+    }
+    .menu_section > ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .nav.side-menu > li{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 16px;
+        padding: 8px 0;
+    }
+}
+@media screen and (max-width:1200px){
+    .nav-md .container.body{
+        .main_container{
+            .menu{
+                &-wrap{
+                    position: relative;
+                    flex-basis: 76px;
                 }
             }
         }

@@ -157,7 +157,7 @@
         </div>
 
         <!-- 資料表顯示 -->
-        <div id="searchResults" class="x_panel jsgrid data-panel Index-table" style="max-width: 1650px; min-height: 800px; position: relative; height: auto; width: 1385px;display: none;">
+        <div id="searchResults" class="x_panel jsgrid data-panel Index-table" style="max-width: 1650px; min-height: 800px; position: relative; height: auto; width: 1385px;">
             <!-- 資料表標題 -->
             <div class="jsgrid-grid-header jsgrid-header-scrollbar">
                 <table class="jsgrid-table">
@@ -214,11 +214,14 @@
             <div class="jsgrid-load-panel" style="display: none; position: absolute; top: 50%; left: 50%; z-index: 1000;">請稍候...</div>
         </div>
         <!-- 地圖圖表顯示 -->
-        <div id="resultMap" class="x_panel map-container">
+        <div id="resultMap" class="x_panel map-container" style="display: none;">
             <div id="mapDiv" class="map-panel">
                 <div id="map" style="min-height:800px; height:100%"></div>
             </div>
             <div class="area-panel" id="collapseLayers">
+                <div class="area-toggle">
+                    <a href="javascript:;" class="area-toggle__btn">按鈕</a>
+                </div>
                 <div class="x_panel init-panel">
                     <ul class="to_do">
                         <li class="to_do-box">

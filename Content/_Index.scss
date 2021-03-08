@@ -102,6 +102,7 @@
 }
 
 .Index-table{
+    min-height: auto !important;
     .jsgrid-header-row>.jsgrid-header-cell,.jsgrid-cell{
         &:nth-of-type(1){
     

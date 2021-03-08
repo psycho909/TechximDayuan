@@ -1,5 +1,5 @@
 <template>
-    <div class="main-wrap">
+    <div class="main-wrap" role="main">
         <!-- 大園區水利工程及災害防汛資訊系統 -->
         <div class="top_nav">
             <div class="nav_menu">

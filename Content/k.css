@@ -4,15 +4,19 @@ body { min-width: 1200px; }
 
 .container { min-height: 100vh; background-color: #EDEDED; }
 
+.jsgrid-grid-header, .jsgrid-grid-body { -ms-flex-item-align: start; align-self: flex-start; }
+
 .jsgrid-edit-row > .jsgrid-cell, .jsgrid-filter-row > .jsgrid-cell, .jsgrid-grid-body, .jsgrid-grid-header, .jsgrid-header-row > .jsgrid-header-cell, .jsgrid-insert-row > .jsgrid-cell { border: none; overflow: hidden; }
 
 .jsgrid-header-row > .jsgrid-header-cell { background-color: #656565; padding: 20px 0; color: #fff; font-size: 14px; text-align: center; }
 
-.jsgrid-cell { border: none; padding: 20px 0; text-align: center; color: #000; font-size: 14px; }
+.jsgrid-cell { border: none; padding: 20px 6px; text-align: center; color: #000; font-size: 14px; word-break: break-all; }
 
 .jsgrid-cell .btn { font-size: 14px; }
 
 .jsgrid-cell .btn-info { background-color: #000000; }
+
+.jsgrid-cell .btn-icon { font-size: 0; }
 
 .jsgrid-alt-row > .jsgrid-cell { background-color: #E5E5E5; }
 
@@ -122,7 +126,7 @@ body { min-width: 1200px; }
 
 #resultMap.map-container { background-color: transparent; display: block; border: none; margin-bottom: 0; padding: 0; display: -webkit-box; display: -ms-flexbox; display: flex; margin-bottom: 24px; }
 
-.map-panel { -ms-flex-preferred-size: 900px; flex-basis: 900px; margin-right: 24px; background-color: #fff; padding: 18px 18px; border-radius: 15px; }
+.map-panel { -ms-flex-preferred-size: 80%; flex-basis: 80%; margin-right: 24px; background-color: #fff; padding: 18px 18px; border-radius: 15px; }
 
 .area-panel { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; background-color: #fff; padding: 18px 18px; border-radius: 0 15px 15px 0; }
 
@@ -224,7 +228,7 @@ ul.to_do li { margin-bottom: 18px; }
 
 .toggle { width: auto; }
 
-.nav-sm .container.body .main_container .menu-wrap { position: relative; -ms-flex-preferred-size: 100px; flex-basis: 100px; }
+.nav-sm .container.body .main_container .menu-wrap { position: relative; -ms-flex-preferred-size: 76px; flex-basis: 76px; }
 
 .nav-sm .menu__link { font-size: 0 !important; }
 
@@ -237,6 +241,14 @@ ul.to_do li { margin-bottom: 18px; }
 .nav-sm .menu_section > ul { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
 .nav-sm .nav.side-menu > li { display: -webkit-box; display: -ms-flexbox; display: flex; width: 100%; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; margin-bottom: 16px; padding: 8px 0; }
+
+@media screen and (max-width: 1200px) { .nav-md .container.body .main_container .menu-wrap { position: relative; -ms-flex-preferred-size: 76px; flex-basis: 76px; }
+  .menu__link { font-size: 0 !important; }
+  .menu__link .icon-water, .menu__link .icon-cable, .menu__link .icon-downloadview, .menu__link .icon-uploadview { margin-right: 0; }
+  .menu__link .icon-slide { display: none; }
+  .menu__toggle { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; padding-left: 0; }
+  .menu_section > ul { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+  .nav.side-menu > li { display: -webkit-box; display: -ms-flexbox; display: flex; width: 100%; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; margin-bottom: 16px; padding: 8px 0; } }
 
 .top_nav { margin-bottom: 22px; }
 
@@ -276,6 +288,8 @@ ul.to_do li { margin-bottom: 18px; }
 
 .main-title .fa { color: #1A3481; }
 
+.Index-table { min-height: auto !important; }
+
 .Index-table .jsgrid-header-row > .jsgrid-header-cell:nth-of-type(5), .Index-table .jsgrid-cell:nth-of-type(5) { width: 5% !important; }
 
 .Index-table .jsgrid-header-row > .jsgrid-header-cell:nth-of-type(6), .Index-table .jsgrid-cell:nth-of-type(6) { width: 5% !important; }
@@ -304,7 +318,7 @@ ul.to_do li { margin-bottom: 18px; }
 
 .FaultInformation-table .jsgrid-cell { padding: 8px 0; border: 1px solid #B6B6B6 !important; }
 
-.AttachedCable-table { -ms-flex-preferred-size: 900px; flex-basis: 900px; -ms-flex-negative: 0; flex-shrink: 0; margin-right: 24px; }
+.AttachedCable-table { -ms-flex-preferred-size: 80%; flex-basis: 80%; -ms-flex-negative: 0; flex-shrink: 0; margin-right: 24px; }
 
 .AttachedCable-table .jsgrid-header-row > .jsgrid-header-cell:nth-of-type(1), .AttachedCable-table .jsgrid-cell:nth-of-type(1) { width: 3% !important; }
 
