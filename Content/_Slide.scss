@@ -107,13 +107,16 @@
     width: auto;
 }
 
+.menu-wrap{
+    // transition: all .5s ease-out;
+}
 .nav-sm{
     .container.body{
         .main_container{
             .menu{
                 &-wrap{
                     position: relative;
-                    flex-basis: 76px;
+                    flex-basis: 60px;
                 }
             }
         }
@@ -151,7 +154,7 @@
             .menu{
                 &-wrap{
                     position: relative;
-                    flex-basis: 76px;
+                    flex-basis: 60px;
                 }
             }
         }

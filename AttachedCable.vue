@@ -167,7 +167,7 @@
                 </form>
             </div>
         </div>
-        <div id="searchResults" class="x_panel init-panel d-flex" style="max-width:1650px; min-height:800px;">
+        <div id="searchResults" class="x_panel init-panel" style="max-width:1650px; min-height:800px;" style="display: none;">
             <div class="data-panel AttachedCable-table">
                 <div class="jsgrid-grid-header jsgrid-header-scrollbar">
                     <table class="jsgrid-table">
@@ -221,7 +221,9 @@
                 <div class="jsgrid-load-panel" style="display: none; position: absolute; top: 50%; left: 50%; z-index: 1000;">請稍候...</div>
             </div>
             <div class="fault-panel">
-                <div class="x_panel init-panel tile fixed_height_320">
+                <!-- 增加縮放按鈕 -->
+                <div class="area-toggle"><a href="javascript:;" class="area-toggle__btn">按鈕</a></div>
+                <div class="x_panel init-panel tile fixed_height_320 fault-collapse">
                     <div class="x_title init-title">
                         <h2>缺失圖例</h2>
                         <ul class="nav navbar-right panel_toolbox">
@@ -244,18 +246,14 @@
             </div>
         </div>
 
-        <div id="resultMap" class="x_panel map-container" style="display: none;">
+        <div id="resultMap" class="x_panel map-container">
             <div id="mapDiv" class="map-panel">
                 <div id="map" style="min-height:800px; height:100%"></div>
             </div>
             <div class="area-panel" id="collapseLayers">
-                <div class="x_panel init-panel">
-                    <div class="x_title">
-                        <button id="toggleBtn" type="button" class="collapseLayers btn btn-success btn-xs fa fa-chevron-right">
-                            圖資
-                        </button>
-                        <div class="clearfix"></div>
-                    </div>
+                <!-- 增加縮放按鈕 -->
+                <div class="area-toggle"><a href="javascript:;" class="area-toggle__btn">按鈕</a></div>
+                <div class="x_panel init-panel area-collapse">
                     <ul class="to_do">
                         <li class="to_do-box">
                             <div class="to_do-group">

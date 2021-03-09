@@ -10,6 +10,10 @@ body{
 .container{
     min-height: 100vh;
     background-color: $bg;
+    // overflow: hidden;
+}
+#searchResults{
+    display: flex;
 }
 .jsgrid-grid-header,.jsgrid-grid-body{
     align-self: flex-start;
@@ -301,22 +305,50 @@ body{
     margin-bottom: 24px;
 }
 .map-panel{
-    flex-basis: 80%;
-    margin-right: 24px;
+    flex: 1 1 100%;
+    margin-right: 12px;
     background-color: #fff;
     padding: 18px 18px;
     border-radius: 15px;
 }
-.area-panel{
-    flex: 1;
-    // background-color: #fff;
-    // padding: 18px 18px;
-    border-radius: 0 15px 15px 0;
-    .x_panel{
-        background-color: #fff;
-        padding: 18px 18px;
+.area{
+    &-panel{
+        flex: 1 0 250px;
+        // background-color: #fff;
+        // padding: 18px 18px;
+        display: flex;
+        transition: margin .6s;
+        will-change: margin;
+        &.hide{
+            margin-right: -220px;
+        }
+    }
+    &-toggle{
+        flex-basis: 30px;
+        flex-shrink: 0;
+        &__btn{
+            width: 100%;
+            height: 50px;
+            border-radius: 100px 0 0 100px;
+            background-color: #fff;
+            display: block;
+            font-size: 0;
+            position: relative;
+            &:before{
+                content: "";
+                width: 12px;
+                height: 12px;
+                border-top: 2px solid #000;
+                border-left: 2px solid #000;
+                position: absolute;
+                top: 50%;
+                left: 16px;
+                transform: translateY(-50%) rotate(-45deg);
+            }
+        }
     }
 }
+
 .init-panel{
     background-color: transparent;
     display: block;
@@ -342,12 +374,27 @@ body{
     margin-top: 0;
     padding: 0;
 }
+.area-collapse{
+    position: relative;
+    background-color: #fff;
+    padding: 12px 12px;
+    border-radius: 0 15px 15px 0;
+}
 .fault-panel{
     flex: 1;
-    background-color: #fff;
-    padding: 18px 18px;
-    border-radius: 0 15px 15px 0;
     align-self: flex-start;
+    display: flex;
+    flex: 1 0 250px;
+    transition: margin .6s;
+    will-change: margin;
+    &.hide{
+        margin-right: -220px;
+    }
+}
+.fault-collapse{
+    background-color: #fff;
+    padding: 12px 12px;
+    border-radius: 0 15px 15px 0;
 }
 ul.to_do li.to_do-box-wrap{
     background-color: transparent;

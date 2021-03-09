@@ -45,7 +45,8 @@
         background-color: $bg;
         flex: 1;
         padding-top: 22px;
-        padding-right: 22px;
+        margin-right: 22px;
+        overflow: hidden;
         .top_nav{
             margin-left: 0;
         }

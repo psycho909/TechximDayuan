@@ -218,11 +218,12 @@
             <div id="mapDiv" class="map-panel">
                 <div id="map" style="min-height:800px; height:100%"></div>
             </div>
+            <!-- 增加縮放按鈕 -->
             <div class="area-panel" id="collapseLayers">
                 <div class="area-toggle">
                     <a href="javascript:;" class="area-toggle__btn">按鈕</a>
                 </div>
-                <div class="x_panel init-panel">
+                <div class="x_panel init-panel area-collapse">
                     <ul class="to_do">
                         <li class="to_do-box">
                             <div class="to_do-group">

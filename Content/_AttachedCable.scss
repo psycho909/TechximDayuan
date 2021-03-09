@@ -41,9 +41,8 @@
     }
 }
 .AttachedCable-table{
-    flex-basis: 80%;
-    flex-shrink: 0;
-    margin-right: 24px;
+    flex: 1 1 100%;
+    margin-right: 12px;
     .jsgrid-header-row>.jsgrid-header-cell,.jsgrid-cell{
         &:nth-of-type(1){
             width: 3% !important;
