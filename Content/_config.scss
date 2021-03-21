@@ -284,17 +284,7 @@ body{
         }
     }
 }
-.data{
-    &-panel{
-        background-color: #fff;
-        padding: 36px 18px;
-        border-radius: 18px;
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 24px;
-        width: 100% !important;
-    }
-}
+
 #resultMap.map-container{
     background-color: transparent;
     display: block;
@@ -395,6 +385,17 @@ body{
     background-color: #fff;
     padding: 12px 12px;
     border-radius: 0 15px 15px 0;
+}
+.data{
+    &-panel{
+        background-color: #fff;
+        padding: 36px 18px;
+        border-radius: 18px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 24px;
+        width: 100% !important;
+    }
 }
 ul.to_do li.to_do-box-wrap{
     background-color: transparent;
