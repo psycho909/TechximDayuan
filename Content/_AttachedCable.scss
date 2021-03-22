@@ -95,4 +95,7 @@
 }
 .searchResults-box{
     display: flex;
+    .panel_toolbox{
+        display: none;
+    }
 }

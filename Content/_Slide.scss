@@ -27,7 +27,7 @@
     border-right: 5px solid #EC9C00;
 }
 .nav.child_menu > li > a{
-    font-size: 20px;
+    font-size: 16px;
     padding:12px 0 12px 60px;
     font-weight: bold;
     color: #656565;
@@ -52,7 +52,7 @@
         .menu{
             &-wrap{
                 position: relative;
-                flex-basis: 320px;
+                flex-basis: 260px;
             }
         }
     }
@@ -68,7 +68,7 @@
         flex-shrink: 0;
     }
     &__link{
-        font-size: 20px;
+        font-size: 16px;
         display: flex !important;
         align-items: center;
         font-weight: bold !important;
